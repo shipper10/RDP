@@ -17,7 +17,7 @@ jobs:
 
       - name: Create RDP User with Static Password
         run: |
-          $password = "NO-BARK@123"
+          $password = "NO-BRAK@123"
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
 
           if (-not (Get-LocalUser -Name "NO_BRAK" -ErrorAction SilentlyContinue)) {
